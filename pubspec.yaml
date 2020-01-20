@@ -9,10 +9,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
   cupertino_icons: ^0.1.2
   mobx: ^0.4.0+1
   flutter_mobx: ^0.3.6
+  provider: ^4.0.2
 
 dev_dependencies:
   mobx_codegen: ^0.4.0+1

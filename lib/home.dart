@@ -1,5 +1,6 @@
 import 'package:fluterando_mobx/aula01/counter_page.dart';
 import 'package:fluterando_mobx/aula03/fullname_page.dart';
+import 'package:fluterando_mobx/aula04/client_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -42,6 +43,15 @@ class HomePage extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => FullNamePage()));
               },
               child: Text('Full Name Form'),
+            ),
+            RaisedButton(
+              color: Colors.blue,
+              textColor: Colors.white,
+              onPressed: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => ClientPage()));
+              },
+              child: Text('Client Form'),
             ),
           ],
         ),
